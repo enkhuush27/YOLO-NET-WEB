@@ -14,14 +14,37 @@ a {
     text-decoration: none;
 }
 
+.cat-header {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;  
+}
+
+.cat-line {
+    border: none;
+    height: 1px;
+    background-color: #6fcdd8;
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+}
+
 hr {
-    border: 1px solid #6FCDDB;
+    border: none;
+    height: 1px;
+    background-color: #6fcdd8;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
 }
 
 .section-title {
-    display: flex;
-    
+    margin: 0 10%;
 }
+
 /* Navbar-хаа дээд хэсгийг хийсэн */
 
 .nav-top {
