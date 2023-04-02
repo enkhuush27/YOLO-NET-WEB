@@ -1,13 +1,21 @@
+:root {
+    --primary-color: #6FCDDB; 
+    --primary-color-rgb: rgba(111, 205, 219, 0.5);
+    --secondary-color: #EE4A9B;
+    --light-color: #f3f3f3;
+    --dark-color: #141515;
+}
+
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 
 /* Хэзээ ч өөрчлөгдөхгүй хэсэг  Utilities*/
 body {
-    background-color: #f3f3f3;
+    background-color: var(--dark-color);
 }
 
 a { 
@@ -18,23 +26,24 @@ a {
     display: inline-block;
     font-weight: 500;
     line-height: 24px;
-    text-transform: uppercase;  
+    color: var(--light-color);
+    text-transform: uppercase; 
+    padding: 30px;
 }
 
 .cat-line {
     border: none;
     height: 1px;
-    background-color: #6fcdd8;
+    background-color: var(--primary-color);
     width: 80%;
     display: inline-block;
     vertical-align: middle;
-    margin: 20px;
 }
 
 hr {
     border: none;
     height: 1px;
-    background-color: #6fcdd8;
+    background-color: var(--primary-color);
     width: 100%;
     display: inline-block;
     vertical-align: middle;
@@ -76,6 +85,7 @@ header #logo {
     width: 570px;
     height: 40px;
     border-radius: 50px;
+    padding: 0 30px;
 }
 
 /* Navbar доод хэсэг */
@@ -90,7 +100,7 @@ header #logo {
     list-style: none;
 }
 
-.nav-bottom  ul li {
+.nav-bottom ul li {
     float: left;
     padding: 0 40px;
 }
@@ -100,9 +110,15 @@ header #logo {
     padding: 20px 10px;
     text-align: center;
     text-transform: uppercase;
+    color: var(--light-color);
     line-height: 24px;
     font-size: 20px;
     font-weight: 500;
+}
+
+.nav-bottom ul li a:hover {
+    color: var(--secondary-color); 
+    transition: 0.3s;
 }
 
 
@@ -113,23 +129,25 @@ header #logo {
 }
 
 .footer-top {
-    display: flex;
-    justify-content: center;
-    padding: 20px 10px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(9, 2fr);
+}
+
+.footer-top a {
+    grid-column-start: 2;
+}
+
+.footer-top .social-acc {
+    grid-column-start: 8;
 }
 
 footer #logo {
-    float: left;
     width: 110px;
+    grid-column-start: 2;
 }
 
 .footer-top ul{
     list-style: none;
-}
-
-#footer-home .social-acc {
-    padding-left: 800px;
 }
 
 .footer-top ul li {
@@ -161,6 +179,7 @@ footer #logo {
     padding: 20px 10px;
     text-align: center;
     line-height: 24px;
+    color: var(--light-color);
     font-size: 20px;
     font-weight: 500;
 }
@@ -179,4 +198,112 @@ footer #logo {
     font-size: 20px;
     line-height: 24px;
     font-weight: 500;
+}
+
+/* Онцлох мэдээ */
+
+
+/* Алдартнууд   */
+
+.famous {
+    display: grid;
+    grid-template-columns: repeat(9, 2fr);
+    /* grid-column-gap: 20px; */
+    padding: 2rem;
+} 
+
+.famous h4, p {
+    color: var(--light-color);
+}
+
+.famous .f1{
+    grid-column-start: 2;
+}
+
+.famous .f2{
+    grid-column-start: 4;
+}
+
+.famous .f3{
+    grid-column-start: 6;
+}
+
+.famous .f4{
+    grid-column-start: 8;
+}
+
+.famous img {
+    border-radius: 100%;
+    width: 150px;
+    height: 145px;
+}
+
+.famous h4, .famous p {
+    text-align: center;
+}
+
+/* Санал болгох мэдээний хэсэг */
+
+
+.suggest-content {
+    display: grid;
+    grid-template-columns: repeat(9, 2fr);
+    padding: 2rem;
+} 
+
+.suggest-content img {
+    width: 190px;
+    height: 345px;
+    border-radius: 30px;
+}
+
+.suggest-content h4 {
+    color: var(--light-color);
+}
+
+.suggest-content .content-1 {
+    grid-column-start: 2;
+    background: url("https://www.yolo.mn/img/content_image/cover_image/160220231676520025_1930372638.jpeg") no-repeat center center;
+    width: 190px;
+    height: 345px;
+    border-radius: 30px;
+    background-size: cover;
+    filter: brightness(90%);
+    position: relative;
+}
+
+.content-1 h4 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(111, 205, 219, 0.5);
+  }
+
+.suggest-content .content-2 {
+    grid-column-start: 4;
+}
+
+.suggest-content .content-3 {
+    grid-column-start: 6;
+}
+
+.suggest-content .content-4 {
+    grid-column-start: 8;
+}
+
+.suggest-content .content-5 {
+    visibility: hidden;
+}
+
+.suggest-content .content-6 {
+    visibility: hidden;
+}
+
+/* Шинээр нэмэгдсэн */
+
+.new h4, p{
+    color: var(--light-color);
 }
