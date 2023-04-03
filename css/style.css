@@ -248,8 +248,6 @@ footer #logo {
 }
 
 /* Санал болгох мэдээний хэсэг */
-
-
 .suggest-content {
     display: grid;
     grid-template-columns: repeat(9, 2fr);
