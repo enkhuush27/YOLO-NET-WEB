@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+body { 
+    background-color: black;
+=======
 :root {
     --primary-color: #6FCDDB; 
     --primary-color-rgb: rgba(111, 205, 219, 0.5);
@@ -312,4 +316,5 @@ footer #logo {
 
 .new h4, p{
     color: var(--light-color);
+>>>>>>> c0ebe7507a565a555868c23e2e240208a16d9538
 }
