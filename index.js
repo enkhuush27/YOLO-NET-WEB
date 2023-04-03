@@ -1,6 +1,6 @@
 let content1, content2, content3; 
 
-fetch('/test.json')
+fetch('./test.json')
   .then(response => response.json())
   .then(data => { 
     console.log(data);  
