@@ -14,13 +14,17 @@
 
 .social-acc .fa {
     color: var(--primary-color);
-    font-size: 1.5rem;
-    border: 2px solid white;
-    border-radius: 50%;
+    font-size: 1.5rem;  
     text-align: center;
-    margin-right: 0.5rem;
-    padding: 0.5rem;
+    margin-right: 1rem;
 }
+
+.social-acc .fa:hover {
+    color: var(--secondary-color);
+    transition: 0.5s ease-in-out; 
+}
+
+
 
 /* Хэзээ ч өөрчлөгдөхгүй хэсэг  Utilities*/
 body {
@@ -68,7 +72,9 @@ hr {
 .nav-top {
     display: flex;
     justify-content: space-around;
-    padding: 1.25rem 0.625rem;
+    height: 6rem;
+    padding: 1.5rem 0.625rem;
+    align-items: center;
 }
 
 header #logo {
@@ -83,18 +89,13 @@ header #logo {
 .nav-top ul li {
     float: left;
 }
-.nav-top ul li a {
-    display: block;
-    padding: 1.25rem 0.625rem;
-    text-align: center;
-}
 
 .nav-top input {
     align-self: center;
     width: 570px;
     height: 40px;
     border-radius: 50px;
-    padding: 0 30px;
+    padding: 0 1.8rem;
 }
 
 /* Navbar доод хэсэг */
@@ -102,6 +103,7 @@ header #logo {
 .nav-bottom {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 1.25rem 0.625rem;
 }
 
@@ -209,30 +211,13 @@ footer #logo {
 /* Алдартнууд   */
 
 .famous {
-    display: grid;
-    grid-template-columns: repeat(9, 2fr);
-    /* grid-column-gap: 1.25rem; */
+    display: flex;
+    justify-content: space-evenly;
     padding: 2rem;
 } 
 
 .famous h4, p {
     color: var(--light-color);
-}
-
-.famous .f1{
-    grid-column-start: 2;
-}
-
-.famous .f2{
-    grid-column-start: 4;
-}
-
-.famous .f3{
-    grid-column-start: 6;
-}
-
-.famous .f4{
-    grid-column-start: 8;
 }
 
 .famous img {
