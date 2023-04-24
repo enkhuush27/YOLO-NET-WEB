@@ -14,12 +14,19 @@
 
 .social-acc .fa {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 1.5rem;  
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.social-acc .fa:hover {
+    color: var(--secondary-color);
+    transition: 0.5s ease-in-out; 
 }
 
 /* Хэзээ ч өөрчлөгдөхгүй хэсэг  Utilities*/
 body {
-    background-color: #535151;
+    background-color: var(--dark-color);
 }
 
 a { 
@@ -29,10 +36,10 @@ a {
 .cat-header {
     display: inline-block;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.6rem;
     color: var(--light-color);
     text-transform: uppercase; 
-    padding: 30px;
+    padding: 1.8rem;
 }
 
 .cat-line {
@@ -63,7 +70,9 @@ hr {
 .nav-top {
     display: flex;
     justify-content: space-around;
-    padding: 20px 10px;
+    height: 6rem;
+    padding: 1.5rem 0.625rem;
+    align-items: center;
 }
 
 header #logo {
@@ -78,18 +87,13 @@ header #logo {
 .nav-top ul li {
     float: left;
 }
-.nav-top ul li a {
-    display: block;
-    padding: 20px 10px;
-    text-align: center;
-}
 
 .nav-top input {
     align-self: center;
     width: 570px;
     height: 40px;
     border-radius: 50px;
-    padding: 0 30px;
+    padding: 0 1.8rem;
 }
 
 /* Navbar доод хэсэг */
@@ -97,7 +101,8 @@ header #logo {
 .nav-bottom {
     display: flex;
     justify-content: space-around;
-    padding: 20px 10px;
+    align-items: center;
+    padding: 1.25rem 0.625rem;
 }
 
 .nav-bottom ul {
@@ -111,12 +116,12 @@ header #logo {
 
 .nav-bottom ul li a {
     display: block;
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
     text-align: center;
     text-transform: uppercase;
     color: var(--light-color);
     line-height: 24px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -129,25 +134,19 @@ header #logo {
 /* footer хэсгийн style */
 
 #container {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .footer-top {
-    display: grid;
-    grid-template-columns: repeat(9, 2fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%; 
 }
 
-.footer-top a {
-    grid-column-start: 2;
-}
-
-.footer-top .social-acc {
-    grid-column-start: 8;
-}
 
 footer #logo {
     width: 110px;
-    grid-column-start: 2;
 }
 
 .footer-top ul{
@@ -160,11 +159,11 @@ footer #logo {
 
 .footer-top ul li a {
     display: block;
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
     text-align: center;
     text-transform: uppercase;
     line-height: 24px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -180,11 +179,11 @@ footer #logo {
 
 .footer-mid ul li a {
     display: block;
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
     text-align: center;
     line-height: 24px;
     color: var(--light-color);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -195,11 +194,11 @@ footer #logo {
 .footer-bottom {    
     display: flex;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
 }
 
 .footer-bottom p {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 24px;
     font-weight: 500;
 }
@@ -210,30 +209,13 @@ footer #logo {
 /* Алдартнууд   */
 
 .famous {
-    display: grid;
-    grid-template-columns: repeat(9, 2fr);
-    /* grid-column-gap: 20px; */
+    display: flex;
+    justify-content: space-evenly;
     padding: 2rem;
 } 
 
 .famous h4, p {
     color: var(--light-color);
-}
-
-.famous .f1{
-    grid-column-start: 2;
-}
-
-.famous .f2{
-    grid-column-start: 4;
-}
-
-.famous .f3{
-    grid-column-start: 6;
-}
-
-.famous .f4{
-    grid-column-start: 8;
 }
 
 .famous img {
@@ -276,6 +258,33 @@ footer #logo {
     position: relative;
 }
 
+.suggest-content .content-2 {
+    width: 190px;
+    height: 345px;
+    border-radius: 30px;
+    background-size: cover;
+    filter: brightness(90%);
+    position: relative;
+}
+
+.suggest-content .content-3 {
+    width: 190px;
+    height: 345px;
+    border-radius: 30px;
+    background-size: cover;
+    filter: brightness(90%);
+    position: relative;
+}
+
+.suggest-content .content-4 {
+    width: 190px;
+    height: 345px;
+    border-radius: 30px;
+    background-size: cover;
+    filter: brightness(90%);
+    position: relative;
+}
+
 .content-1 h4 {
     position: absolute;
     bottom: 0;
@@ -285,6 +294,36 @@ footer #logo {
     z-index: 1;
     background-color: rgba(111, 205, 219, 0.5);
   }
+
+.content-2 h4 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(111, 205, 219, 0.5);
+}
+
+.content-3 h4 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(111, 205, 219, 0.5);
+}
+
+.content-4 h4 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(111, 205, 219, 0.5);
+}
 
 .suggest-content .content-2 {
     grid-column-start: 4;
