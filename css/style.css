@@ -24,11 +24,9 @@
     transition: 0.5s ease-in-out; 
 }
 
-
-
 /* Хэзээ ч өөрчлөгдөхгүй хэсэг  Utilities*/
 body {
-    background-color: #535151;
+    background-color: var(--dark-color);
 }
 
 a { 
